@@ -1,0 +1,94 @@
+.main-menu {
+  &__toggle{
+    background-color: $white;
+    border-radius: 50% / 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: $dark-grey;
+    font-size: 0;
+    text-decoration: none;
+    &:after{
+      content: $fa-var-bars;
+      font-family: 'Font-Awesome';
+      font-size: 15px;
+    }
+  }
+  &__toggle-check {
+    & ~ .main-menu__links {
+      transform: scale(0);
+      transform-origin: 50% 0%;
+      transition: transform, 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    & ~ .main-menu__toggle{
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    }
+    &:checked ~ .main-menu__links{
+      transform: scale(1.0);
+      transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+  }
+  &__links{
+    border-radius: 50% / 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    overflow:hidden;
+    transform: scale(0);
+  }
+
+  &__link {
+    background-color: $red;
+    border: 1px solid $dark-grey;
+    overflow: hidden;
+    transform-origin: 0% 0%;
+    &:hover{
+      background-color: lighten($red, 10%);
+    }
+    &:nth-child(n+1) {
+      transform: rotate(150deg) skew(50deg);
+    }
+    &:nth-child(n+2) {
+      transform: rotate(110deg) skew(50deg);
+    }
+    &:nth-child(n+3) {
+      transform: rotate(70deg) skew(50deg);
+    }
+    &:nth-child(n+4) {
+      transform: rotate(30deg) skew(50deg);
+    }
+    &:nth-child(n+5) {
+      transform: rotate(-10deg) skew(50deg);
+    }
+
+    a{
+      color: #F7F9F9;
+      text-decoration: none;
+      transform: skew(-50deg) rotate(-70deg);
+    }
+  }
+}
+
+.nav-link {
+  font-size:0;
+  &:after {
+    font-family: 'Font-Awesome';
+    font-size: 15px;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  &--about:after{
+    content: $fa-var-info-circle;
+  }
+  &--contact:after{
+    content: $fa-var-envelope;
+  }
+  &--home:after{
+    content: $fa-var-home;
+  }
+  &--lab:after{
+    content: $fa-var-flask;
+  }
+  &--thoughts:after{
+    content: $fa-var-comment;
+  }
+}

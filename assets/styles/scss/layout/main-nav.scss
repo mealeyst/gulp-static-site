@@ -1,0 +1,63 @@
+.main-menu{
+  margin: 0;
+  padding:0;
+  position: fixed;
+  left: 50%;
+  margin-left: -43vw;
+
+  &__toggle {
+    box-sizing: border-box;
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    left: 50%;
+    margin-left: -3rem;
+    max-width: 6rem;
+    max-height: 3rem;
+    padding-top: 0.5rem;
+    position: absolute;
+    width: 6rem;
+    z-index: 10;
+  }
+  &__toggle-check {
+    display: none;
+  }
+  &__links {
+    height: 43vw;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 86vw;
+  }
+  &__link {
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    a {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      margin-top: -36%;
+      padding-bottom: 2rem;
+      position: absolute;
+      width: 100%;
+    }
+  }
+}
+
+@media #{$tablet} {
+  .main-menu {
+    margin-left: -15rem;
+    &__toggle{
+
+    }
+    &__links {
+      max-height: 15rem;
+      max-width: 30rem;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import 'main-nav';
+@import 'footer';
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+article {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 96rem;
+  padding: 1rem 1rem;
+}
+
+main {
+  margin-bottom: 6rem;
+}

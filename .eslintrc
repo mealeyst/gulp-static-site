@@ -1,0 +1,63 @@
+{
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "binaryLiterals": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "octalLiterals": true,
+    "regexUFlag": true,
+    "regexYFlag": true,
+    "restParams": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "unicodeCodePointEscapes": true,
+    "jsx": true
+  },
+  "rules": {
+    "react/jsx-uses-react": 1,
+    "no-unused-vars": 2,
+    "no-undef": 2,
+    "valid-jsdoc": 2,
+    "comma-dangle": 2,
+    "curly": 2,
+    "quotes": [
+      2,
+      "single"
+    ],
+    "semi": [2, "always"],
+    "no-extra-semi": 2
+  },
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "-": 0,
+    "describe": 0,
+    "beforeEach": 0,
+    "it": 0,
+    "xit": 0,
+    "window": 0,
+    "document": 0,
+    "localStorage": 0,
+    "Image": 0,
+    "NREUM": 0,
+    "rg4js": 0,
+    "FWS_VERSION": 0,
+    "Raygun": 0
+  },
+  "plugins": [
+    "react"
+  ],
+  "parser": "babel-eslint"
+}

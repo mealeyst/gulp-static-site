@@ -1,0 +1,28 @@
+@import 'main-menu';
+@import 'footer';
+html, body {
+  background-color: $dark-grey;
+}
+
+article {
+  background-color: $white;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.6);
+}
+
+.title, .subtitle, h1, h2, h3, h4 {
+  color: $blue;
+}
+
+.title, h1, h2, h3, h4 {
+  font-family: 'Dosis';
+}
+
+.subtitle {
+  font-family: 'OpenSans';
+  font-style: italic;
+}
+
+p, span, li , a{
+  font-family: 'OpenSans';
+}
